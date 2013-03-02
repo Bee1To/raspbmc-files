@@ -1,0 +1,6 @@
+TARGETS = urandom sendsigs umountnfs.sh umountfs umountroot halt reboot
+umountnfs.sh: sendsigs
+umountfs: umountnfs.sh urandom
+umountroot: umountfs
+halt: umountroot
+reboot: umountroot

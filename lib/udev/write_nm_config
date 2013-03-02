@@ -1,0 +1,103 @@
+#!/bin/bash +e
+
+# This script is run to create network manager device config file
+# based on properties of the device.
+
+# variables used to communicate:
+#   MATCHADDR             MAC address used for the match
+#   MATCHID               bus_id used for the match
+#   MATCHDEVID            dev_id used for the match
+#   MATCHDRV              driver name used for the match
+#   COMMENT               comment to add to the generated rule
+
+
+create_wifi_conf () {
+mac_addr="$1"
+uid="$2"
+id=$(echo $mac_addr | tr '[A-Z]' '[a-z]' | awk 'BEGIN { FS = ":" }; { print $5$6}')
+root="$3"
+index=$(ls "$root" | grep Wifi |wc -l)
+index=$(($index + 1))
+file="$root"/"Wifi connection ""$index"
+existing_config=$(grep -i $mac_addr "$root"/"Wifi connection "* 2>/dev/null)
+if [ ! -f "${file}" ]; then
+    existing_config=$(grep -i $mac_addr "$root"/"Wifi connection "* 2>/dev/null)
+    if [ "$existing_config" != "" ]; then
+        exit 0
+    fi
+    echo "#""$COMMENT"" wireless nic based on ""$MATCHDRV" > "${file}"
+    echo "
+[802-11-wireless]
+ssid=raspbmc
+mode=infrastructure
+security=802-11-wireless-security"       >> "${file}"
+    echo "mac-address=""$mac_addr"       >> "${file}"
+    echo "
+[802-11-wireless-security]
+key-mgmt=wpa-psk
+psk=8skgZZhu"                            >> "${file}"
+    echo "
+[connection]"                            >> "${file}"
+    echo "id=Wifi connection ""$index"   >> "${file}"
+    echo "uuid=""$uid" >> "$file"
+    echo "type=802-11-wireless
+autoconnect=true
+timestamp=0
+
+[ipv4]
+method=auto" >> "$file"
+    echo "dhcp-client-id=xbmc-""$id"     >> "${file}"
+    echo "dhcp-hostname=xbmc-""$id"      >> "${file}"
+fi
+if [ -f "${file}" ]; then
+    chmod 600 "${file}"
+fi
+}
+
+
+create_wired_conf () {
+mac_addr="$1"
+uid="$2"
+id=$(echo $mac_addr | tr '[A-Z]' '[a-z]' | awk 'BEGIN { FS = ":" }; { print $5$6}')
+root="$3"
+index=$(ls "$root" | grep Wired |wc -l)
+index=$(($index + 1))
+file="$root"/"Wired connection ""$index"
+if [ ! -f "${file}" ]; then
+    existing_config=$(grep -i $mac_addr "$root"/"Wired connection "* 2>/dev/null)
+    if [ "$existing_config" != "" ]; then
+        exit 0
+    fi
+    echo "#""$COMMENT"" wired nic based on ""$MATCHDRV" > "${file}"
+    echo "
+[802-3-ethernet]
+mac-address=""$mac_addr"                 >> "${file}"
+    echo "
+[connection]
+id=Wired connection ""$index"            >> "${file}"
+    echo "uuid=""$uid"                   >> "${file}"
+    echo "type=802-3-ethernet
+autoconnect=true
+timestamp=0
+
+[ipv4]
+method=auto"                             >> "${file}"
+    echo "dhcp-client-id=xbmc-""$id"     >> "${file}"
+    echo "dhcp-hostname=xbmc-""$id"      >> "${file}"
+fi
+if [ -f "${file}" ]; then
+    chmod 600 "${file}"
+fi
+}
+
+
+UUID=$(cat /proc/sys/kernel/random/uuid)
+test "x$UUID" != "x" || UUID=11111111-1111-1111-1111-111111111111
+ROOT="/etc/NetworkManager/system-connections"
+
+test "x$MATCHDRV" != "x" || MATCHDRV="$ID_USB_DRIVER"
+
+if [ "$MATCHDRV" != "smsc95xx" ]; then
+    create_wifi_conf "$MATCHADDR" "$UUID" "$ROOT"
+fi
+

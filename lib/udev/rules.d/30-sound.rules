@@ -1,0 +1,3 @@
+##
+
+SUBSYSTEM=="sound", ACTION=="add|change", RUN+="set_volume"

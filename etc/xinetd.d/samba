@@ -1,0 +1,23 @@
+service netbios-ssn
+{
+        id = netbios-ssn
+        # port = netbios-ssn
+        socket_type = stream
+        protocol = tcp
+        user = root
+        wait = no
+        instances = 2
+        server = /usr/sbin/smbd
+
+service netbios-ns
+{
+        id = netbios-ns
+        # port = netbios-ns
+        socket_type = dgram
+        protocol = udp
+        user = root
+        wait = yes
+        instances = 1
+        server = /usr/sbin/nmbd
+disable = no
+}

@@ -1,0 +1,16 @@
+[802-3-ethernet]
+mac-address=B8:27:EB:86:8C:C1
+
+[connection]
+id=Wired connection 1
+uuid=2b18690f-3c25-4e89-9fd6-2e3e2217d486
+type=802-3-ethernet
+timestamp=1362215760
+
+[ipv6]
+method=ignore
+
+[ipv4]
+method=auto
+dhcp-client-id=xbmc-8cc1
+dhcp-hostname=xbmc-8cc1

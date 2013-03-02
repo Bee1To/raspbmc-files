@@ -1,0 +1,19 @@
+#!/bin/bash
+
+case "$ACTION" in
+
+	add|change)
+                #logger -t set_volume DEVNAME  $DEVNAME
+                #logger -t set_volume DEVICENAME $DEVICENAME
+		#logger -t set_volume DEVPATH  $DEVPATH
+        	if test "x${DEVNAME}" != "x" ; then
+            		exit 1;
+        	fi
+        	dev_index=`echo ${DEVPATH} | sed -e 's/\/\+/ /g' | awk '{print $NF}' | sed -e "s/card//"`
+                logger -t set_volume dev_index $dev_index
+		MIXER=$(amixer | grep "mixer control" | grep "$dev_index"$ | cut -f2 -d"'")
+		for mix in $MIXER ; do
+                  /usr/bin/amixer sset $mix 100% unmute > /dev/null 2>&1
+                done
+	;;
+esac

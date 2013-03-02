@@ -1,0 +1,2 @@
+# Disable udisks pooling for USB disks 
+KERNEL=="sd*", SUBSYSTEMS=="usb", ENV{UDISKS_DISABLE_POLLING}="1"

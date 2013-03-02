@@ -1,0 +1,9 @@
+#KERNEL=="event*",ATTR{name}=="HID 05a4:9881",SYMLINK="input/ira"
+
+SUBSYSTEM=="usb", ACTION=="add", ATTR{idVendor}=="05a4", ATTR{idProduct}=="9881", RUN+="/usr/bin/logger -t hama 'hama remote added with action add, firing up hama'"
+SUBSYSTEM=="usb", ACTION=="change", ATTR{idVendor}=="05a4", ATTR{idProduct}=="9881", RUN+="/usr/bin/logger -t hama 'hama remote added with action change, firing up hama'"
+
+
+
+SUBSYSTEM=="usb", ACTION=="add|change", ATTR{idVendor}=="05a4", ATTR{idProduct}=="9881", RUN+="/sbin/initctl emit --no-wait hama"
+SUBSYSTEM=="usb", ACTION=="remove", ATTR{idVendor}=="05a4", ATTR{idProduct}=="9881", RUN+="/sbin/initctl emit --no-wait hamastop"

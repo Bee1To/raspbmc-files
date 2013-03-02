@@ -1,0 +1,2 @@
+TARGETS = urandom
+INTERACTIVE =

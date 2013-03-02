@@ -1,0 +1,513 @@
+[/tmp/01-create-root-partition.log] 
+============
+[/tmp/03-format-root-partition.log] 
+mke2fs 1.42.2 (27-Mar-2012)
+Filesystem label=
+OS type: Linux
+Block size=4096 (log=2)
+Fragment size=4096 (log=2)
+Stride=2 blocks, Stripe width=1024 blocks
+969136 inodes, 3870464 blocks
+193523 blocks (5.00%) reserved for the super user
+First data block=0
+Maximum filesystem blocks=3963617280
+119 block groups
+32768 blocks per group, 32768 fragments per group
+8144 inodes per group
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208
+
+Allocating group tables:   0/119  1/119  2/119  3/119  4/119  5/119  6/119  7/119  8/119  9/119 10/119 11/119 12/119 13/119 14/119 15/119 16/119 17/119 18/119 19/119 20/119 21/119 22/119 23/119 24/119 25/119 26/119 27/119 28/119 29/119 30/119 31/119 32/119 33/119 34/119 35/119 36/119 37/119 38/119 39/119 40/119 41/119 42/119 43/119 44/119 45/119 46/119 47/119 48/119 49/119 50/119 51/119 52/119 53/119 54/119 55/119 56/119 57/119 58/119 59/119 60/119 61/119 62/119 63/119 64/119 65/119 66/119 67/119 68/119 69/119 70/119 71/119 72/119 73/119 74/119 75/119 76/119 77/119 78/119 79/119 80/119 81/119 82/119 83/119 84/119 85/119 86/119 87/119 88/119 89/119 90/119 91/119 92/119 93/119 94/119 95/119 96/119 97/119 98/119 99/119100/119101/119102/119103/119104/119105/119106/119107/119108/119109/119110/119111/119112/119113/119114/119115/119116/119117/119118/119       done                            
+Writing inode tables:   0/119  1/119  2/119  3/119  4/119  5/119  6/119  7/119  8/119  9/119 10/119 11/119 12/119 13/119 14/119 15/119 16/119 17/119 18/119 19/119 20/119 21/119 22/119 23/119 24/119 25/119 26/119 27/119 28/119 29/119 30/119 31/119 32/119 33/119 34/119 35/119 36/119 37/119 38/119 39/119 40/119 41/119 42/119 43/119 44/119 45/119 46/119 47/119 48/119 49/119 50/119 51/119 52/119 53/119 54/119 55/119 56/119 57/119 58/119 59/119 60/119 61/119 62/119 63/119 64/119 65/119 66/119 67/119 68/119 69/119 70/119 71/119 72/119 73/119 74/119 75/119 76/119 77/119 78/119 79/119 80/119 81/119 82/119 83/119 84/119 85/119 86/119 87/119 88/119 89/119 90/119 91/119 92/119 93/119 94/119 95/119 96/119 97/119 98/119 99/119100/119101/119102/119103/119104/119105/119106/119107/119108/119109/119110/119111/119112/119113/119114/119115/119116/119117/119118/119       done                            
+Creating journal (32768 blocks): done
+Writing superblocks and filesystem accounting information:   0/119  1/119  2/119  3/119  4/119  5/119  6/119  7/119  8/119  9/119 10/119 11/119 12/119 13/119 14/119 15/119 16/119 17/119 18/119 19/119 20/119 21/119 22/119 23/119 24/119 25/119 26/119 27/119 28/119 29/119 30/119 31/119 32/119 33/119 34/119 35/119 36/119 37/119 38/119 39/119 40/119 41/119 42/119 43/119 44/119 45/119 46/119 47/119 48/119 49/119 50/119 51/119 52/119 53/119 54/119 55/119 56/119 57/119 58/119 59/119 60/119 61/119 62/119 63/119 64/119 65/119 66/119 67/119 68/119 69/119 70/119 71/119 72/119 73/119 74/119 75/119 76/119 77/119 78/119 79/119 80/119 81/119 82/119 83/119 84/119 85/119 86/119 87/119 88/119 89/119 90/119 91/119 92/119 93/119 94/119 95/119 96/119 97/119 98/119 99/119100/119101/119102/119103/119104/119105/119106/119107/119108/119109/119110/119111/119112/119113/119114/119115/119116/119117/119118/119       done
+
+============
+[/tmp/04-fine-tune-root-partition.log] 
+tune2fs 1.42.2 (27-Mar-2012)
+Setting maximal mount count to -1
+============
+[/tmp/split.log] 
+Processor	: ARMv6-compatible processor rev 7 (v6l)
+BogoMIPS	: 531.66
+Features	: swp half thumb fastmult vfp edsp java tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xb76
+CPU revision	: 7
+
+Hardware	: BCM2708
+Revision	: 0002
+Serial		: 00000000f0868cc1
+============
+[/var/log/01-create-root-partition.log] 
+============
+[/var/log/03-format-root-partition.log] 
+mke2fs 1.42.2 (27-Mar-2012)
+Filesystem label=
+OS type: Linux
+Block size=4096 (log=2)
+Fragment size=4096 (log=2)
+Stride=2 blocks, Stripe width=1024 blocks
+969136 inodes, 3870464 blocks
+193523 blocks (5.00%) reserved for the super user
+First data block=0
+Maximum filesystem blocks=3963617280
+119 block groups
+32768 blocks per group, 32768 fragments per group
+8144 inodes per group
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208
+
+Allocating group tables:   0/119  1/119  2/119  3/119  4/119  5/119  6/119  7/119  8/119  9/119 10/119 11/119 12/119 13/119 14/119 15/119 16/119 17/119 18/119 19/119 20/119 21/119 22/119 23/119 24/119 25/119 26/119 27/119 28/119 29/119 30/119 31/119 32/119 33/119 34/119 35/119 36/119 37/119 38/119 39/119 40/119 41/119 42/119 43/119 44/119 45/119 46/119 47/119 48/119 49/119 50/119 51/119 52/119 53/119 54/119 55/119 56/119 57/119 58/119 59/119 60/119 61/119 62/119 63/119 64/119 65/119 66/119 67/119 68/119 69/119 70/119 71/119 72/119 73/119 74/119 75/119 76/119 77/119 78/119 79/119 80/119 81/119 82/119 83/119 84/119 85/119 86/119 87/119 88/119 89/119 90/119 91/119 92/119 93/119 94/119 95/119 96/119 97/119 98/119 99/119100/119101/119102/119103/119104/119105/119106/119107/119108/119109/119110/119111/119112/119113/119114/119115/119116/119117/119118/119       done                            
+Writing inode tables:   0/119  1/119  2/119  3/119  4/119  5/119  6/119  7/119  8/119  9/119 10/119 11/119 12/119 13/119 14/119 15/119 16/119 17/119 18/119 19/119 20/119 21/119 22/119 23/119 24/119 25/119 26/119 27/119 28/119 29/119 30/119 31/119 32/119 33/119 34/119 35/119 36/119 37/119 38/119 39/119 40/119 41/119 42/119 43/119 44/119 45/119 46/119 47/119 48/119 49/119 50/119 51/119 52/119 53/119 54/119 55/119 56/119 57/119 58/119 59/119 60/119 61/119 62/119 63/119 64/119 65/119 66/119 67/119 68/119 69/119 70/119 71/119 72/119 73/119 74/119 75/119 76/119 77/119 78/119 79/119 80/119 81/119 82/119 83/119 84/119 85/119 86/119 87/119 88/119 89/119 90/119 91/119 92/119 93/119 94/119 95/119 96/119 97/119 98/119 99/119100/119101/119102/119103/119104/119105/119106/119107/119108/119109/119110/119111/119112/119113/119114/119115/119116/119117/119118/119       done                            
+Creating journal (32768 blocks): done
+Writing superblocks and filesystem accounting information:   0/119  1/119  2/119  3/119  4/119  5/119  6/119  7/119  8/119  9/119 10/119 11/119 12/119 13/119 14/119 15/119 16/119 17/119 18/119 19/119 20/119 21/119 22/119 23/119 24/119 25/119 26/119 27/119 28/119 29/119 30/119 31/119 32/119 33/119 34/119 35/119 36/119 37/119 38/119 39/119 40/119 41/119 42/119 43/119 44/119 45/119 46/119 47/119 48/119 49/119 50/119 51/119 52/119 53/119 54/119 55/119 56/119 57/119 58/119 59/119 60/119 61/119 62/119 63/119 64/119 65/119 66/119 67/119 68/119 69/119 70/119 71/119 72/119 73/119 74/119 75/119 76/119 77/119 78/119 79/119 80/119 81/119 82/119 83/119 84/119 85/119 86/119 87/119 88/119 89/119 90/119 91/119 92/119 93/119 94/119 95/119 96/119 97/119 98/119 99/119100/119101/119102/119103/119104/119105/119106/119107/119108/119109/119110/119111/119112/119113/119114/119115/119116/119117/119118/119       done
+
+============
+[/var/log/04-fine-tune-root-partition.log] 
+tune2fs 1.42.2 (27-Mar-2012)
+Setting maximal mount count to -1
+============
+[/var/log/NetworkManager.pid] 
+78============
+[/var/log/dhclient-eth0.pid] 
+112
+============
+[/var/log/dropbear.pid] 
+123
+============
+[/var/log/messagebus.pid] 
+72
+============
+[/var/log/messages] 
+Jan  1 00:00:11 raspbmc syslog.info syslogd started: BusyBox v1.20.1
+Jan  1 00:00:11 raspbmc user.notice kernel: klogd started: BusyBox v1.20.1 (2012-12-28 22:40:05 GMT)
+Jan  1 00:00:11 raspbmc user.info kernel: Booting Linux on physical CPU 0
+Jan  1 00:00:11 raspbmc user.info kernel: Initializing cgroup subsys cpu
+Jan  1 00:00:11 raspbmc user.notice kernel: Linux version 3.6.11 (root@raspbmc-buildbox) (gcc version 4.6.3 (crosstool-NG hg+default-366637520035) ) #2 PREEMPT Fri Dec 28 23:37:13 GMT 2012
+Jan  1 00:00:11 raspbmc user.warn kernel: CPU: ARMv6-compatible processor [410fb767] revision 7 (ARMv7), cr=00c5387d
+Jan  1 00:00:11 raspbmc user.warn kernel: CPU: PIPT / VIPT nonaliasing data cache, VIPT nonaliasing instruction cache
+Jan  1 00:00:11 raspbmc user.warn kernel: Machine: BCM2708
+Jan  1 00:00:11 raspbmc user.warn kernel: Memory policy: ECC disabled, Data cache writeback
+Jan  1 00:00:11 raspbmc user.debug kernel: On node 0 totalpages: 32768
+Jan  1 00:00:11 raspbmc user.debug kernel: free_area_init_node: node 0, pgdat c108d328, node_mem_map c10dc000
+Jan  1 00:00:11 raspbmc user.debug kernel:   Normal zone: 256 pages used for memmap
+Jan  1 00:00:11 raspbmc user.debug kernel:   Normal zone: 0 pages reserved
+Jan  1 00:00:11 raspbmc user.debug kernel:   Normal zone: 32512 pages, LIFO batch:7
+Jan  1 00:00:11 raspbmc user.debug kernel: pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+Jan  1 00:00:11 raspbmc user.debug kernel: pcpu-alloc: [0] 0 
+Jan  1 00:00:11 raspbmc user.warn kernel: Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 32512
+Jan  1 00:00:11 raspbmc user.notice kernel: Kernel command line: dma.dmachans=0x7f35 bcm2708_fb.fbwidth=1920 bcm2708_fb.fbheight=1080 bcm2708.boardrev=0x2 bcm2708.serial=0xf0868cc1 smsc95xx.macaddr=B8:27:EB:86:8C:C1 sdhci-bcm2708.emmc_clock_freq=100000000 vc_mem.mem_base
+Jan  1 00:00:11 raspbmc user.info kernel: PID hash table entries: 512 (order: -1, 2048 bytes)
+Jan  1 00:00:11 raspbmc user.info kernel: Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+Jan  1 00:00:11 raspbmc user.info kernel: Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+Jan  1 00:00:11 raspbmc user.info kernel: Memory: 128MB = 128MB total
+Jan  1 00:00:11 raspbmc user.notice kernel: Memory: 112632k/112632k available, 18440k reserved, 0K highmem
+Jan  1 00:00:11 raspbmc user.notice kernel: Virtual kernel memory layout:
+Jan  1 00:00:11 raspbmc user.notice kernel:     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+Jan  1 00:00:11 raspbmc user.notice kernel:     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+Jan  1 00:00:11 raspbmc user.notice kernel:     vmalloc : 0xc8800000 - 0xff000000   ( 872 MB)
+Jan  1 00:00:11 raspbmc user.notice kernel:     lowmem  : 0xc0000000 - 0xc8000000   ( 128 MB)
+Jan  1 00:00:11 raspbmc user.notice kernel:     modules : 0xbf000000 - 0xc0000000   (  16 MB)
+Jan  1 00:00:11 raspbmc user.notice kernel:       .text : 0xc0008000 - 0xc0464000   (4464 kB)
+Jan  1 00:00:11 raspbmc user.notice kernel:       .init : 0xc0464000 - 0xc105f64c   (12270 kB)
+Jan  1 00:00:11 raspbmc user.notice kernel:       .data : 0xc1060000 - 0xc108da40   ( 183 kB)
+Jan  1 00:00:11 raspbmc user.notice kernel:        .bss : 0xc108da64 - 0xc10db1ec   ( 310 kB)
+Jan  1 00:00:11 raspbmc user.info kernel: NR_IRQS:330
+Jan  1 00:00:11 raspbmc user.info kernel: sched_clock: 32 bits at 1000kHz, resolution 1000ns, wraps every 4294967ms
+Jan  1 00:00:11 raspbmc user.info kernel: Console: colour dummy device 80x30
+Jan  1 00:00:11 raspbmc user.info kernel: console [tty1] enabled
+Jan  1 00:00:11 raspbmc user.info kernel: Calibrating delay loop... 531.66 BogoMIPS (lpj=2658304)
+Jan  1 00:00:11 raspbmc user.info kernel: pid_max: default: 32768 minimum: 301
+Jan  1 00:00:11 raspbmc user.info kernel: Mount-cache hash table entries: 512
+Jan  1 00:00:11 raspbmc user.info kernel: CPU: Testing write buffer coherency: ok
+Jan  1 00:00:11 raspbmc user.info kernel: Setting up static identity map for 0x3ea258 - 0x3ea2b4
+Jan  1 00:00:11 raspbmc user.info kernel: devtmpfs: initialized
+Jan  1 00:00:11 raspbmc user.info kernel: NET: Registered protocol family 16
+Jan  1 00:00:11 raspbmc user.info kernel: DMA: preallocated 4096 KiB pool for atomic coherent allocations
+Jan  1 00:00:11 raspbmc user.warn kernel: bcm2708.uart_clock = 0
+Jan  1 00:00:11 raspbmc user.info kernel: mailbox: Broadcom VideoCore Mailbox driver
+Jan  1 00:00:11 raspbmc user.info kernel: bcm2708_vcio: mailbox at f200b880
+Jan  1 00:00:11 raspbmc user.info kernel: bcm_power: Broadcom power driver
+Jan  1 00:00:11 raspbmc user.warn kernel: bcm_power_open() -> 0
+Jan  1 00:00:11 raspbmc user.warn kernel: bcm_power_request(0, 8)
+Jan  1 00:00:11 raspbmc user.warn kernel: bcm_mailbox_read -> 00000080, 0
+Jan  1 00:00:11 raspbmc user.warn kernel: bcm_power_request -> 0
+Jan  1 00:00:11 raspbmc user.info kernel: Serial: AMBA PL011 UART driver
+Jan  1 00:00:11 raspbmc user.info kernel: dev:f1: ttyAMA0 at MMIO 0x20201000 (irq = 83) is a PL011 rev3
+Jan  1 00:00:11 raspbmc user.info kernel: console [ttyAMA0] enabled
+Jan  1 00:00:11 raspbmc user.info kernel: bio: create slab <bio-0> at 0
+Jan  1 00:00:11 raspbmc user.notice kernel: SCSI subsystem initialized
+Jan  1 00:00:11 raspbmc user.info kernel: usbcore: registered new interface driver usbfs
+Jan  1 00:00:11 raspbmc user.info kernel: usbcore: registered new interface driver hub
+Jan  1 00:00:11 raspbmc user.info kernel: usbcore: registered new device driver usb
+Jan  1 00:00:11 raspbmc user.info kernel: Switching to clocksource stc
+Jan  1 00:00:11 raspbmc user.notice kernel: FS-Cache: Loaded
+Jan  1 00:00:11 raspbmc user.info kernel: CacheFiles: Loaded
+Jan  1 00:00:11 raspbmc user.info kernel: NET: Registered protocol family 2
+Jan  1 00:00:11 raspbmc user.info kernel: TCP established hash table entries: 4096 (order: 3, 32768 bytes)
+Jan  1 00:00:11 raspbmc user.info kernel: TCP bind hash table entries: 4096 (order: 2, 16384 bytes)
+Jan  1 00:00:11 raspbmc user.info kernel: TCP: Hash tables configured (established 4096 bind 4096)
+Jan  1 00:00:11 raspbmc user.info kernel: TCP: reno registered
+Jan  1 00:00:11 raspbmc user.info kernel: UDP hash table entries: 256 (order: 0, 4096 bytes)
+Jan  1 00:00:11 raspbmc user.info kernel: UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+Jan  1 00:00:11 raspbmc user.info kernel: NET: Registered protocol family 1
+Jan  1 00:00:11 raspbmc user.info kernel: RPC: Registered named UNIX socket transport module.
+Jan  1 00:00:11 raspbmc user.info kernel: RPC: Registered udp transport module.
+Jan  1 00:00:11 raspbmc user.info kernel: RPC: Registered tcp transport module.
+Jan  1 00:00:11 raspbmc user.info kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+Jan  1 00:00:11 raspbmc user.info kernel: bcm2708_dma: DMA manager at f2007000
+Jan  1 00:00:11 raspbmc user.info kernel: bcm2708_gpio: bcm2708_gpio_probe c106bbc8
+Jan  1 00:00:11 raspbmc user.warn kernel: vc-mem: phys_addr:0x00000000 mem_base=0x0ec00000 mem_size:0x10000000(256 MiB)
+Jan  1 00:00:11 raspbmc user.notice kernel: VFS: Disk quotas dquot_6.5.2
+Jan  1 00:00:11 raspbmc user.warn kernel: Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+Jan  1 00:00:11 raspbmc user.notice kernel: FS-Cache: Netfs 'nfs' registered for caching
+Jan  1 00:00:11 raspbmc user.notice kernel: NFS: Registering the id_resolver key type
+Jan  1 00:00:11 raspbmc user.notice kernel: Key type id_resolver registered
+Jan  1 00:00:11 raspbmc user.notice kernel: Key type id_legacy registered
+Jan  1 00:00:11 raspbmc user.info kernel: msgmni has been set to 219
+Jan  1 00:00:11 raspbmc user.info kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 253)
+Jan  1 00:00:11 raspbmc user.info kernel: io scheduler noop registered (default)
+Jan  1 00:00:11 raspbmc user.info kernel: io scheduler deadline registered
+Jan  1 00:00:11 raspbmc user.info kernel: io scheduler cfq registered
+Jan  1 00:00:11 raspbmc user.info kernel: Console: switching to colour frame buffer device 240x67
+Jan  1 00:00:11 raspbmc user.info kernel: brd: module loaded
+Jan  1 00:00:11 raspbmc user.info kernel: loop: module loaded
+Jan  1 00:00:11 raspbmc user.info kernel: vchiq: vchiq_init_state: slot_zero = 0xc8804000, is_master = 0
+Jan  1 00:00:11 raspbmc user.info kernel: usbcore: registered new interface driver smsc95xx
+Jan  1 00:00:11 raspbmc user.info kernel: usbcore: registered new interface driver cdc_ncm
+Jan  1 00:00:11 raspbmc user.info kernel: dwc_otg: version 3.00a 10-AUG-2012 (platform bus)
+Jan  1 00:00:11 raspbmc user.warn kernel: Core Release: 2.80a
+Jan  1 00:00:11 raspbmc user.warn kernel: Setting default values for core params
+Jan  1 00:00:11 raspbmc user.warn kernel: Finished setting default values for core params
+Jan  1 00:00:11 raspbmc user.warn kernel: Using Buffer DMA mode
+Jan  1 00:00:11 raspbmc user.warn kernel: Periodic Transfer Interrupt Enhancement - disabled
+Jan  1 00:00:11 raspbmc user.warn kernel: Multiprocessor Interrupt Enhancement - disabled
+Jan  1 00:00:11 raspbmc user.warn kernel: OTG VER PARAM: 0, OTG VER FLAG: 0
+Jan  1 00:00:11 raspbmc user.warn kernel: Dedicated Tx FIFOs mode
+Jan  1 00:00:11 raspbmc user.debug kernel: dwc_otg: Microframe scheduler enabled
+Jan  1 00:00:11 raspbmc user.info kernel: dwc_otg bcm2708_usb: DWC OTG Controller
+Jan  1 00:00:11 raspbmc user.info kernel: dwc_otg bcm2708_usb: new USB bus registered, assigned bus number 1
+Jan  1 00:00:11 raspbmc user.info kernel: dwc_otg bcm2708_usb: irq 32, io mem 0x00000000
+Jan  1 00:00:11 raspbmc user.warn kernel: Init: Port Power? op_state=1
+Jan  1 00:00:11 raspbmc user.warn kernel: Init: Power Port (0)
+Jan  1 00:00:11 raspbmc user.info kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+Jan  1 00:00:11 raspbmc user.info kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Jan  1 00:00:11 raspbmc user.info kernel: usb usb1: Product: DWC OTG Controller
+Jan  1 00:00:11 raspbmc user.info kernel: usb usb1: Manufacturer: Linux 3.6.11 dwc_otg_hcd
+Jan  1 00:00:11 raspbmc user.info kernel: usb usb1: SerialNumber: bcm2708_usb
+Jan  1 00:00:11 raspbmc user.info kernel: hub 1-0:1.0: USB hub found
+Jan  1 00:00:11 raspbmc user.info kernel: hub 1-0:1.0: 1 port detected
+Jan  1 00:00:11 raspbmc user.debug kernel: dwc_otg: FIQ enabled
+Jan  1 00:00:11 raspbmc user.debug kernel: dwc_otg: NAK holdoff enabled
+Jan  1 00:00:11 raspbmc user.debug kernel: Module dwc_common_port init
+Jan  1 00:00:11 raspbmc user.info kernel: Initializing USB Mass Storage driver...
+Jan  1 00:00:11 raspbmc user.info kernel: usbcore: registered new interface driver usb-storage
+Jan  1 00:00:11 raspbmc user.info kernel: USB Mass Storage support registered.
+Jan  1 00:00:11 raspbmc user.info kernel: usbcore: registered new interface driver libusual
+Jan  1 00:00:11 raspbmc user.info kernel: mousedev: PS/2 mouse device common for all mice
+Jan  1 00:00:11 raspbmc user.info kernel: bcm2835-cpufreq: min=800000 max=800000 cur=800000
+Jan  1 00:00:11 raspbmc user.info kernel: bcm2835-cpufreq: switching to governor ondemandbcm2835-cpufreq: switching to governor ondemand
+Jan  1 00:00:11 raspbmc user.info kernel: cpuidle: using governor ladder
+Jan  1 00:00:11 raspbmc user.info kernel: cpuidle: using governor menu
+Jan  1 00:00:11 raspbmc user.info kernel: sdhci: Secure Digital Host Controller Interface driver
+Jan  1 00:00:11 raspbmc user.info kernel: sdhci: Copyright(c) Pierre Ossman
+Jan  1 00:00:11 raspbmc user.warn kernel: sdhci: Enable low-latency mode
+Jan  1 00:00:11 raspbmc user.debug kernel: Registered led device: mmc0::
+Jan  1 00:00:11 raspbmc user.info kernel: mmc0: SDHCI controller on BCM2708_Arasan [platform] using platform's DMA
+Jan  1 00:00:11 raspbmc user.info kernel: mmc0: BCM2708 SDHC host at 0x20300000 DMA 2 IRQ 77
+Jan  1 00:00:11 raspbmc user.info kernel: sdhci-pltfm: SDHCI platform and OF driver helper
+Jan  1 00:00:11 raspbmc user.debug kernel: Registered led device: led0
+Jan  1 00:00:11 raspbmc user.info kernel: usbcore: registered new interface driver usbhid
+Jan  1 00:00:11 raspbmc user.info kernel: usbhid: USB HID core driver
+Jan  1 00:00:11 raspbmc user.warn kernel: Indeed it is in host mode hprt0 = 00021501
+Jan  1 00:00:11 raspbmc user.info kernel: zram: num_devices not specified. Using default: 1
+Jan  1 00:00:11 raspbmc user.info kernel: zram: Creating 1 devices ...
+Jan  1 00:00:11 raspbmc user.info kernel: TCP: westwood registered
+Jan  1 00:00:11 raspbmc user.info kernel: Initializing XFRM netlink socket
+Jan  1 00:00:11 raspbmc user.info kernel: mmc0: new high speed SDHC card at address aaaa
+Jan  1 00:00:11 raspbmc user.info kernel: NET: Registered protocol family 17
+Jan  1 00:00:11 raspbmc user.info kernel: mmcblk0: mmc0:aaaa SU16G 14.8 GiB 
+Jan  1 00:00:11 raspbmc user.notice kernel: Key type dns_resolver registered
+Jan  1 00:00:11 raspbmc user.info kernel:  mmcblk0: p1
+Jan  1 00:00:11 raspbmc user.info kernel: VFP support v0.3: implementor 41 architecture 1 part 20 variant b rev 5
+Jan  1 00:00:11 raspbmc user.info kernel: Freeing init memory: 12268K
+Jan  1 00:00:11 raspbmc user.info kernel: usb 1-1: new high-speed USB device number 2 using dwc_otg
+Jan  1 00:00:11 raspbmc user.warn kernel: Indeed it is in host mode hprt0 = 00001101
+Jan  1 00:00:11 raspbmc user.err kernel: 0>udevd[49]: starting version 182
+Jan  1 00:00:11 raspbmc daemon.err udevd[49]: specified group 'dialout' unknown
+Jan  1 00:00:11 raspbmc daemon.err udevd[49]: specified group 'kmem' unknown
+Jan  1 00:00:11 raspbmc daemon.err udevd[49]: specified group 'video' unknown
+Jan  1 00:00:11 raspbmc daemon.err udevd[49]: specified group 'lp' unknown
+Jan  1 00:00:11 raspbmc daemon.err udevd[49]: specified group 'floppy' unknown
+Jan  1 00:00:11 raspbmc daemon.err udevd[49]: specified group 'cdrom' unknown
+Jan  1 00:00:11 raspbmc daemon.err udevd[49]: specified group 'tape' unknown
+Jan  1 00:00:11 raspbmc user.info kernel: usb 1-1: New USB device found, idVendor=0424, idProduct=9512
+Jan  1 00:00:11 raspbmc user.info kernel: usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Jan  1 00:00:11 raspbmc user.info kernel: hub 1-1:1.0: USB hub found
+Jan  1 00:00:11 raspbmc user.info kernel: hub 1-1:1.0: 3 ports detected
+Jan  1 00:00:11 raspbmc user.info kernel: usb 1-1.1: new high-speed USB device number 3 using dwc_otg
+Jan  1 00:00:11 raspbmc daemon.info NetworkManager[78]: <info> NetworkManager (version 0.9.2.0) is starting...
+Jan  1 00:00:11 raspbmc daemon.info NetworkManager[78]: <info> Read config file (null)
+Jan  1 00:00:12 raspbmc user.info kernel: usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
+Jan  1 00:00:12 raspbmc daemon.warn NetworkManager[78]: Error parsing file '/etc/NetworkManager/nm-system-settings.conf': No such file or directory
+Jan  1 00:00:12 raspbmc daemon.info NetworkManager[78]: <info> Loaded plugin keyfile: (c) 2007 - 2010 Red Hat, Inc.  To report bugs please use the NetworkManager mailing list.
+Jan  1 00:00:12 raspbmc daemon.warn NetworkManager[78]: Error parsing file '/etc/NetworkManager/nm-system-settings.conf': No such file or directory
+Jan  1 00:00:12 raspbmc daemon.warn NetworkManager[78]: Error parsing file '/etc/NetworkManager/nm-system-settings.conf': No such file or directory
+Jan  1 00:00:12 raspbmc user.info kernel: usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Jan  1 00:00:12 raspbmc daemon.info NetworkManager[78]: <info> trying to start the modem manager...
+Jan  1 00:00:12 raspbmc daemon.info NetworkManager[78]: <info> monitoring kernel firmware directory '/lib/firmware'.
+Jan  1 00:00:12 raspbmc user.info kernel: smsc95xx v1.0.4
+Jan  1 00:00:12 raspbmc daemon.info NetworkManager[78]: <info> WiFi enabled by radio killswitch; enabled by state file
+Jan  1 00:00:12 raspbmc daemon.info NetworkManager[78]: <info> WWAN enabled by radio killswitch; enabled by state file
+Jan  1 00:00:12 raspbmc daemon.info NetworkManager[78]: <info> WiMAX enabled by radio killswitch; enabled by state file
+Jan  1 00:00:12 raspbmc daemon.info NetworkManager[78]: <info> Networking is enabled by state file
+Jan  1 00:00:12 raspbmc daemon.warn NetworkManager[78]: <warn> bluez error getting default adapter: The name org.bluez was not provided by any .service files
+Jan  1 00:00:12 raspbmc user.info kernel: smsc95xx 1-1.1:1.0: eth0: register 'smsc95xx' at usb-bcm2708_usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:86:8c:c1
+Jan  1 00:00:12 raspbmc user.info kernel: usb 1-1.2: new low-speed USB device number 4 using dwc_otg
+Jan  1 00:00:12 raspbmc user.info kernel: usb 1-1.2: New USB device found, idVendor=04f3, idProduct=0103
+Jan  1 00:00:12 raspbmc user.info kernel: usb 1-1.2: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Jan  1 00:00:12 raspbmc user.info kernel: input: HID 04f3:0103 as /devices/platform/bcm2708_usb/usb1/1-1/1-1.2/1-1.2:1.0/input/input0
+Jan  1 00:00:12 raspbmc daemon.err NetworkManager[78]: <error> [12.732214] [nm-device-ethernet.c:752] real_update_permanent_hw_address(): (eth0): unable to read permanent MAC address (error 0)
+Jan  1 00:00:12 raspbmc daemon.warn NetworkManager[78]: <warn> (eth0): couldn't get initial carrier state: (8) error updating link cache: Bad socket
+Jan  1 00:00:12 raspbmc daemon.info NetworkManager[78]: <info> (eth0): carrier is OFF
+Jan  1 00:00:12 raspbmc daemon.info NetworkManager[78]: <info> (eth0): new Ethernet device (driver: 'smsc95xx' ifindex: 2)
+Jan  1 00:00:12 raspbmc daemon.info NetworkManager[78]: <info> (eth0): exported as /org/freedesktop/NetworkManager/Devices/0
+Jan  1 00:00:12 raspbmc daemon.info NetworkManager[78]: <info> (eth0): now managed
+Jan  1 00:00:12 raspbmc daemon.info NetworkManager[78]: <info> (eth0): device state change: unmanaged -> unavailable (reason 'managed') [10 20 2]
+Jan  1 00:00:12 raspbmc daemon.info NetworkManager[78]: <info> (eth0): bringing up device.
+Jan  1 00:00:12 raspbmc user.info kernel: hid-generic 0003:04F3:0103.0001: input: USB HID v1.10 Keyboard [HID 04f3:0103] on usb-bcm2708_usb-1.2/input0
+Jan  1 00:00:12 raspbmc daemon.info NetworkManager[78]: <info> (eth0): deactivating device (reason 'managed') [2]
+Jan  1 00:00:12 raspbmc daemon.info NetworkManager[78]: <info> Added default wired connection 'Wired connection 1' for /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0
+Jan  1 00:00:12 raspbmc user.info kernel: input: HID 04f3:0103 as /devices/platform/bcm2708_usb/usb1/1-1/1-1.2/1-1.2:1.1/input/input1
+Jan  1 00:00:12 raspbmc user.info kernel: hid-generic 0003:04F3:0103.0002: input: USB HID v1.10 Device [HID 04f3:0103] on usb-bcm2708_usb-1.2/input1
+Jan  1 00:00:14 raspbmc user.info kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Jan  1 00:00:14 raspbmc daemon.info NetworkManager[78]: <info> (eth0): carrier now ON (device state 20)
+Jan  1 00:00:14 raspbmc daemon.info NetworkManager[78]: <info> (eth0): device state change: unavailable -> disconnected (reason 'carrier-changed') [20 30 40]
+Jan  1 00:00:14 raspbmc daemon.info NetworkManager[78]: <info> Auto-activating connection 'Wired connection 1'.
+Jan  1 00:00:14 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) starting connection 'Wired connection 1'
+Jan  1 00:00:14 raspbmc daemon.info NetworkManager[78]: <info> (eth0): device state change: disconnected -> prepare (reason 'none') [30 40 0]
+Jan  1 00:00:14 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) scheduled...
+Jan  1 00:00:14 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) started...
+Jan  1 00:00:14 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) scheduled...
+Jan  1 00:00:14 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) complete.
+Jan  1 00:00:14 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) starting...
+Jan  1 00:00:14 raspbmc daemon.info NetworkManager[78]: <info> (eth0): device state change: prepare -> config (reason 'none') [40 50 0]
+Jan  1 00:00:14 raspbmc daemon.info NetworkManager[78]: <info> (eth0): preparing device.
+Jan  1 00:00:14 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) successful.
+Jan  1 00:00:14 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) scheduled.
+Jan  1 00:00:14 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) complete.
+Jan  1 00:00:14 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) started...
+Jan  1 00:00:14 raspbmc daemon.info NetworkManager[78]: <info> (eth0): device state change: config -> ip-config (reason 'none') [50 70 0]
+Jan  1 00:00:14 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Beginning DHCPv4 transaction (timeout in 45 seconds)
+Jan  1 00:00:14 raspbmc daemon.info NetworkManager[78]: <info> dhclient started with pid 106
+Jan  1 00:00:14 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) complete.
+Jan  1 00:00:14 raspbmc daemon.info dhclient: Internet Systems Consortium DHCP Client 4.1-ESV-R4
+Jan  1 00:00:14 raspbmc daemon.info dhclient: Copyright 2004-2011 Internet Systems Consortium.
+Jan  1 00:00:14 raspbmc daemon.info dhclient: All rights reserved.
+Jan  1 00:00:14 raspbmc daemon.info dhclient: For info, please visit https://www.isc.org/software/dhcp/
+Jan  1 00:00:14 raspbmc daemon.info dhclient: 
+Jan  1 00:00:14 raspbmc daemon.err dhclient: can't create /var/lib/dhclient/dhclient-820bc330-c029-4197-a738-44d445cee366-eth0.lease: No such file or directory
+Jan  1 00:00:14 raspbmc daemon.info dhclient: Listening on LPF/eth0/b8:27:eb:86:8c:c1
+Jan  1 00:00:14 raspbmc daemon.info dhclient: Sending on   LPF/eth0/b8:27:eb:86:8c:c1
+Jan  1 00:00:14 raspbmc daemon.info dhclient: Sending on   Socket/fallback
+Jan  1 00:00:14 raspbmc daemon.info dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 7
+Jan  1 00:00:14 raspbmc daemon.info dhclient: DHCPREQUEST on eth0 to 255.255.255.255 port 67
+Jan  1 00:00:14 raspbmc daemon.info dhclient: DHCPOFFER from 192.168.0.1
+Jan  1 00:00:14 raspbmc daemon.info NetworkManager[78]: <info> (eth0): DHCPv4 state changed nbi -> preinit
+Jan  1 00:00:14 raspbmc user.debug [1970-01-01 00:00:14,857] Wait 5 seconds for Network Interface <Connection: "Wired connection 1"> B8:27:EB:86:8C:C1 to configure IP Address
+Jan  1 00:00:15 raspbmc daemon.info dhclient: DHCPACK from 192.168.0.1
+Jan  1 00:00:15 raspbmc daemon.info NetworkManager[78]: <info> (eth0): DHCPv4 state changed preinit -> bound
+Jan  1 00:00:15 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 4 of 5 (IP4 Configure Get) scheduled...
+Jan  1 00:00:15 raspbmc daemon.err dhclient: can't create /var/lib/dhclient/dhclient-820bc330-c029-4197-a738-44d445cee366-eth0.lease: No such file or directory
+Jan  1 00:00:15 raspbmc daemon.info dhclient: bound to 192.168.0.18 -- renewal in 1718 seconds.
+Jan  1 00:00:15 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 4 of 5 (IP4 Configure Get) started...
+Jan  1 00:00:15 raspbmc daemon.info NetworkManager[78]: <info>   address 192.168.0.18
+Jan  1 00:00:15 raspbmc daemon.info NetworkManager[78]: <info>   prefix 24 (255.255.255.0)
+Jan  1 00:00:15 raspbmc daemon.info NetworkManager[78]: <info>   gateway 192.168.0.1
+Jan  1 00:00:15 raspbmc daemon.info NetworkManager[78]: <info>   nameserver '194.168.4.100'
+Jan  1 00:00:15 raspbmc daemon.info NetworkManager[78]: <info>   nameserver '194.168.8.100'
+Jan  1 00:00:15 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 5 of 5 (IP Configure Commit) scheduled...
+Jan  1 00:00:15 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 4 of 5 (IP4 Configure Get) complete.
+Jan  1 00:00:15 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 5 of 5 (IP Configure Commit) started...
+Jan  1 00:00:16 raspbmc daemon.info NetworkManager[78]: <info> (eth0): device state change: ip-config -> activated (reason 'none') [70 100 0]
+Jan  1 00:00:16 raspbmc daemon.warn NetworkManager[78]: <warn> Failed to add route Unspecific failure
+Jan  1 00:00:16 raspbmc daemon.err NetworkManager[78]: <error> [16.781553] [nm-system.c:944] nm_system_replace_default_ip4_route(): (eth0): failed to set IPv4 default route: 1
+Jan  1 00:00:16 raspbmc daemon.info NetworkManager[78]: <info> Policy set 'Wired connection 1' (eth0) as default for IPv4 routing and DNS.
+Jan  1 00:00:16 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) successful, device activated.
+Jan  1 00:00:16 raspbmc daemon.notice dbus[72]: [system] Activating service name='org.freedesktop.nm_dispatcher' (using servicehelper)
+Jan  1 00:00:16 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 5 of 5 (IP Configure Commit) complete.
+Jan  1 00:00:16 raspbmc daemon.notice dbus[72]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Jan  1 00:00:20 raspbmc user.info nm-update-network.py: conn_list: [(<Connection: "Wired connection 1">, '802-3-ethernet', 100)]
+Jan  1 00:00:20 raspbmc user.info nm-update-network.py: 802-3-ethernet
+Jan  1 00:00:20 raspbmc user.info nm-update-network.py: 802-3-ethernetipv4 new: {'dhcp-send-hostname': dbus.Boolean(True), 'dhcp-client-id': dbus.String(u'xbmc-8cc1'), 'addresses': dbus.Array([], signature=dbus.Signature('au')), 'dns-search': dbus.Array([], signature=d
+Jan  1 00:00:20 raspbmc user.info nm-update-network.py: updating settings
+Jan  1 00:00:20 raspbmc user.info nm-update-network.py: settings._settings dbus.Dictionary({dbus.String(u'802-3-ethernet'): dbus.Dictionary({dbus.String(u's390-options'): dbus.Dictionary({}, signature=dbus.Signature('ss'), variant_level=1), dbus.String(u'mac-address'):
+Jan  1 00:00:20 raspbmc daemon.info NetworkManager[78]: <info> (eth0): device state change: activated -> disconnected (reason 'connection-removed') [100 30 38]
+Jan  1 00:00:20 raspbmc daemon.info NetworkManager[78]: <info> (eth0): deactivating device (reason 'connection-removed') [38]
+Jan  1 00:00:20 raspbmc daemon.info NetworkManager[78]: <info> (eth0): canceled DHCP transaction, DHCP client pid 106
+Jan  1 00:00:20 raspbmc daemon.info NetworkManager[78]: <info> Saved default wired connection 'Wired connection 1' to persistent storage
+Jan  1 00:00:20 raspbmc daemon.info NetworkManager[78]: <info> Auto-activating connection 'Wired connection 1'.
+Jan  1 00:00:20 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) starting connection 'Wired connection 1'
+Jan  1 00:00:20 raspbmc daemon.info NetworkManager[78]: <info> (eth0): device state change: disconnected -> prepare (reason 'none') [30 40 0]
+Jan  1 00:00:20 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) scheduled...
+Jan  1 00:00:20 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) started...
+Jan  1 00:00:20 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) scheduled...
+Jan  1 00:00:20 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) complete.
+Jan  1 00:00:20 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) starting...
+Jan  1 00:00:20 raspbmc daemon.info NetworkManager[78]: <info> (eth0): device state change: prepare -> config (reason 'none') [40 50 0]
+Jan  1 00:00:20 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) successful.
+Jan  1 00:00:20 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) scheduled.
+Jan  1 00:00:20 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) complete.
+Jan  1 00:00:20 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) started...
+Jan  1 00:00:20 raspbmc daemon.info NetworkManager[78]: <info> (eth0): device state change: config -> ip-config (reason 'none') [50 70 0]
+Jan  1 00:00:20 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Beginning DHCPv4 transaction (timeout in 45 seconds)
+Jan  1 00:00:20 raspbmc daemon.info NetworkManager[78]: <info> dhclient started with pid 112
+Jan  1 00:00:20 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) complete.
+Jan  1 00:00:20 raspbmc user.debug [1970-01-01 00:00:20,430] Wait 8 seconds for Network Interface to come up
+Jan  1 00:00:20 raspbmc daemon.info dhclient: Internet Systems Consortium DHCP Client 4.1-ESV-R4
+Jan  1 00:00:20 raspbmc daemon.info dhclient: Copyright 2004-2011 Internet Systems Consortium.
+Jan  1 00:00:20 raspbmc daemon.info dhclient: All rights reserved.
+Jan  1 00:00:20 raspbmc daemon.info dhclient: For info, please visit https://www.isc.org/software/dhcp/
+Jan  1 00:00:20 raspbmc daemon.info dhclient: 
+Jan  1 00:00:20 raspbmc daemon.err dhclient: can't create /var/lib/dhclient/dhclient-820bc330-c029-4197-a738-44d445cee366-eth0.lease: No such file or directory
+Jan  1 00:00:20 raspbmc daemon.info NetworkManager[78]: <info> (eth0): DHCPv4 state changed nbi -> preinit
+Jan  1 00:00:20 raspbmc daemon.info dhclient: Listening on LPF/eth0/b8:27:eb:86:8c:c1
+Jan  1 00:00:20 raspbmc daemon.info dhclient: Sending on   LPF/eth0/b8:27:eb:86:8c:c1
+Jan  1 00:00:20 raspbmc daemon.info dhclient: Sending on   Socket/fallback
+Jan  1 00:00:20 raspbmc daemon.info dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 3
+Jan  1 00:00:20 raspbmc daemon.info dhclient: DHCPREQUEST on eth0 to 255.255.255.255 port 67
+Jan  1 00:00:20 raspbmc daemon.info dhclient: DHCPOFFER from 192.168.0.1
+Jan  1 00:00:21 raspbmc daemon.info dhclient: DHCPACK from 192.168.0.1
+Jan  1 00:00:21 raspbmc daemon.info NetworkManager[78]: <info> (eth0): DHCPv4 state changed preinit -> bound
+Jan  1 00:00:21 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 4 of 5 (IP4 Configure Get) scheduled...
+Jan  1 00:00:21 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 4 of 5 (IP4 Configure Get) started...
+Jan  1 00:00:21 raspbmc daemon.err dhclient: can't create /var/lib/dhclient/dhclient-820bc330-c029-4197-a738-44d445cee366-eth0.lease: No such file or directory
+Jan  1 00:00:21 raspbmc daemon.info dhclient: bound to 192.168.0.18 -- renewal in 1501 seconds.
+Jan  1 00:00:21 raspbmc daemon.info NetworkManager[78]: <info>   address 192.168.0.18
+Jan  1 00:00:21 raspbmc daemon.info NetworkManager[78]: <info>   prefix 24 (255.255.255.0)
+Jan  1 00:00:21 raspbmc daemon.info NetworkManager[78]: <info>   gateway 192.168.0.1
+Jan  1 00:00:21 raspbmc daemon.info NetworkManager[78]: <info>   nameserver '194.168.4.100'
+Jan  1 00:00:21 raspbmc daemon.info NetworkManager[78]: <info>   nameserver '194.168.8.100'
+Jan  1 00:00:21 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 5 of 5 (IP Configure Commit) scheduled...
+Jan  1 00:00:21 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 4 of 5 (IP4 Configure Get) complete.
+Jan  1 00:00:21 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 5 of 5 (IP Configure Commit) started...
+Jan  1 00:00:22 raspbmc daemon.info NetworkManager[78]: <info> (eth0): device state change: ip-config -> activated (reason 'none') [70 100 0]
+Jan  1 00:00:22 raspbmc daemon.warn NetworkManager[78]: <warn> Failed to add route Unspecific failure
+Jan  1 00:00:22 raspbmc daemon.err NetworkManager[78]: <error> [22.601836] [nm-system.c:944] nm_system_replace_default_ip4_route(): (eth0): failed to set IPv4 default route: 1
+Jan  1 00:00:22 raspbmc daemon.info NetworkManager[78]: <info> Policy set 'Wired connection 1' (eth0) as default for IPv4 routing and DNS.
+Jan  1 00:00:22 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) successful, device activated.
+Jan  1 00:00:22 raspbmc daemon.info NetworkManager[78]: <info> Activation (eth0) Stage 5 of 5 (IP Configure Commit) complete.
+Jan  1 00:00:28 raspbmc user.debug [1970-01-01 00:00:28,538] Valid Network Interface found and Activated
+Jan  1 00:00:28 raspbmc user.debug ï»¿[1970-01-01 00:00:28,567] MAC: B8:27:EB:86:8C:C1, Type: 802-3-ethernet
+Jan  1 00:00:28 raspbmc user.debug [1970-01-01 00:00:28,640] IP Address:  192.168.0.18, Netmask: 255.255.255.0 
+Jan  1 00:00:28 raspbmc user.debug [1970-01-01 00:00:28,711] Gateway: 192.168.0.1, DNS: 194.168.4.100
+Jan  1 00:00:36 raspbmc daemon.err udevd[49]: specified group 'dialout' unknown
+Jan  1 00:00:36 raspbmc user.info kernel: NET: Registered protocol family 10
+Jan  1 00:00:36 raspbmc daemon.err udevd[49]: specified group 'kmem' unknown
+Jan  1 00:00:36 raspbmc daemon.err udevd[49]: specified group 'video' unknown
+Jan  1 00:00:36 raspbmc daemon.err udevd[49]: specified group 'lp' unknown
+Jan  1 00:00:36 raspbmc daemon.err udevd[49]: specified group 'floppy' unknown
+Jan  1 00:00:36 raspbmc daemon.err udevd[49]: specified group 'cdrom' unknown
+Jan  1 00:00:36 raspbmc daemon.err udevd[49]: specified group 'tape' unknown
+Jan  1 00:00:36 raspbmc authpriv.info dropbear[123]: Running in background
+Jan  1 00:00:37 raspbmc daemon.info init: starting pid 135, tty '/dev/tty4': '/sbin/getty 38400 tty4'
+Jan  1 14:48:57 raspbmc daemon.err udevd[49]: specified group 'dialout' unknown
+Jan  1 14:48:57 raspbmc daemon.err udevd[49]: specified group 'kmem' unknown
+Jan  1 14:48:57 raspbmc daemon.err udevd[49]: specified group 'video' unknown
+Jan  1 14:48:57 raspbmc daemon.err udevd[49]: specified group 'lp' unknown
+Jan  1 14:48:57 raspbmc daemon.err udevd[49]: specified group 'floppy' unknown
+Jan  1 14:48:57 raspbmc daemon.err udevd[49]: specified group 'cdrom' unknown
+Jan  1 14:48:57 raspbmc daemon.err udevd[49]: specified group 'tape' unknown
+Jan  1 14:49:07 raspbmc daemon.err udevd[49]: specified group 'dialout' unknown
+Jan  1 14:49:07 raspbmc daemon.err udevd[49]: specified group 'kmem' unknown
+Jan  1 14:49:07 raspbmc daemon.err udevd[49]: specified group 'video' unknown
+Jan  1 14:49:07 raspbmc daemon.err udevd[49]: specified group 'lp' unknown
+Jan  1 14:49:07 raspbmc daemon.err udevd[49]: specified group 'floppy' unknown
+Jan  1 14:49:07 raspbmc daemon.err udevd[49]: specified group 'cdrom' unknown
+Jan  1 14:49:07 raspbmc daemon.err udevd[49]: specified group 'tape' unknown
+Jan  1 14:49:07 raspbmc user.info kernel: EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+Jan  1 14:49:07 raspbmc user.notice update-checker: Downloading http://www.mirrorservice.org/sites/raspbmc.com//downloads/bin/filesystem/raspbmc-root-filesystem-20121231.tar.gz
+Jan  1 14:51:57 raspbmc user.notice update-checker: http://www.mirrorservice.org/sites/raspbmc.com//downloads/bin/filesystem/raspbmc-root-filesystem-20121231.tar.gz successfully downloaded
+Jan  1 14:51:57 raspbmc user.notice update-checker: Downloaidng md5sum for http://www.mirrorservice.org/sites/raspbmc.com//downloads/bin/filesystem/raspbmc-root-filesystem-20121231.tar.gz
+Jan  1 14:51:57 raspbmc user.notice update-checker: Md5sum for http://www.mirrorservice.org/sites/raspbmc.com//downloads/bin/filesystem/raspbmc-root-filesystem-20121231.tar.gz successfully downloaded
+Jan  1 14:51:57 raspbmc user.notice update-checker: Verify hash of raspbmc-root-filesystem-20121231.tar.gz when Installing root filesystem
+Jan  1 14:52:05 raspbmc user.notice update-checker: raspbmc-root-filesystem-20121231.tar.gz verified successfully
+Jan  1 14:55:38 raspbmc user.notice update-checker: raspbmc-root-filesystem-20121231.tar.gz extracted successfully
+Jan  1 14:55:38 raspbmc user.notice update-checker: Downloading http://www.mirrorservice.org/sites/raspbmc.com//downloads/bin/kernel/kernel-rootfs-latest-hardfp.tar.gz
+Jan  1 14:55:51 raspbmc user.notice update-checker: http://www.mirrorservice.org/sites/raspbmc.com//downloads/bin/kernel/kernel-rootfs-latest-hardfp.tar.gz successfully downloaded
+Jan  1 14:55:51 raspbmc user.notice update-checker: Downloaidng md5sum for http://www.mirrorservice.org/sites/raspbmc.com//downloads/bin/kernel/kernel-rootfs-latest-hardfp.tar.gz
+Jan  1 14:55:51 raspbmc user.notice update-checker: Md5sum for http://www.mirrorservice.org/sites/raspbmc.com//downloads/bin/kernel/kernel-rootfs-latest-hardfp.tar.gz successfully downloaded
+Jan  1 14:55:51 raspbmc user.notice update-checker: Verify hash of kernel-rootfs-latest-hardfp.tar.gz when Installing kernel modules
+Jan  1 14:55:52 raspbmc user.notice update-checker: kernel-rootfs-latest-hardfp.tar.gz verified successfully
+Jan  1 14:56:15 raspbmc user.notice update-checker: kernel-rootfs-latest-hardfp.tar.gz extracted successfully
+Jan  1 14:56:17 raspbmc user.notice update-checker: Downloading http://www.mirrorservice.org/sites/raspbmc.com//downloads/bin/kernel/kernel-vfat-latest-hardfp.tar.gz
+Jan  1 14:56:19 raspbmc user.info kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Jan  1 14:56:19 raspbmc user.info kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Jan  1 14:56:20 raspbmc user.info kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Jan  1 14:56:20 raspbmc user.info kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Jan  1 14:56:22 raspbmc user.notice update-checker: http://www.mirrorservice.org/sites/raspbmc.com//downloads/bin/kernel/kernel-vfat-latest-hardfp.tar.gz successfully downloaded
+Jan  1 14:56:22 raspbmc user.notice update-checker: Downloaidng md5sum for http://www.mirrorservice.org/sites/raspbmc.com//downloads/bin/kernel/kernel-vfat-latest-hardfp.tar.gz
+Jan  1 14:56:22 raspbmc user.notice update-checker: Md5sum for http://www.mirrorservice.org/sites/raspbmc.com//downloads/bin/kernel/kernel-vfat-latest-hardfp.tar.gz successfully downloaded
+Jan  1 14:56:22 raspbmc user.notice update-checker: Verify hash of kernel-vfat-latest-hardfp.tar.gz when Installing kernel and bootloader
+Jan  1 14:56:22 raspbmc user.notice update-checker: kernel-vfat-latest-hardfp.tar.gz verified successfully
+Jan  1 14:56:24 raspbmc user.info kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Jan  1 14:56:24 raspbmc user.info kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Jan  1 14:56:24 raspbmc user.info kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Jan  1 14:56:24 raspbmc user.info kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Jan  1 14:56:24 raspbmc user.info kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Jan  1 14:56:24 raspbmc user.info kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Jan  1 14:56:25 raspbmc user.info kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Jan  1 14:56:25 raspbmc user.info kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Jan  1 14:56:25 raspbmc user.info kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Jan  1 14:56:25 raspbmc user.info kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Jan  1 14:56:25 raspbmc user.notice update-checker: kernel-vfat-latest-hardfp.tar.gz extracted successfully
+Jan  1 14:56:25 raspbmc user.info kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Jan  1 14:56:25 raspbmc user.info kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Jan  1 14:56:25 raspbmc user.info kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Jan  1 14:56:25 raspbmc user.info kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Jan  1 14:56:26 raspbmc user.info kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Jan  1 14:56:26 raspbmc user.info kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Jan  1 14:56:26 raspbmc user.info kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Jan  1 14:56:26 raspbmc user.info kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Jan  1 14:56:26 raspbmc user.info kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Jan  1 14:56:26 raspbmc user.info kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Jan  1 14:56:26 raspbmc user.info kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Jan  1 14:56:26 raspbmc user.info kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Jan  1 14:56:26 raspbmc user.info kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Jan  1 14:56:26 raspbmc user.info kernel: mmc0: DMA IRQ 6 ignored - results were reset
+============
+[/var/log/nm-dhclient-eth0.conf] 
+# Created by NetworkManager
+
+send dhcp-client-identifier "xbmc-8cc1"; # added by NetworkManager
+send host-name "xbmc-8cc1"; # added by NetworkManager
+
+option rfc3442-classless-static-routes code 121 = array of unsigned integer 8;
+option ms-classless-static-routes code 249 = array of unsigned integer 8;
+option wpad code 252 = string;
+
+also request rfc3442-classless-static-routes;
+also request ms-classless-static-routes;
+also request wpad;
+also request ntp-servers;
+
+============
+[/var/log/split.log] 
+Processor	: ARMv6-compatible processor rev 7 (v6l)
+BogoMIPS	: 531.66
+Features	: swp half thumb fastmult vfp edsp java tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xb76
+CPU revision	: 7
+
+Hardware	: BCM2708
+Revision	: 0002
+Serial		: 00000000f0868cc1
+============
+[/var/log/utmp] 
+   ‡   tty4                            4   LOGIN                                                                                                                                                                                                                                                                                                   %                                           ============
