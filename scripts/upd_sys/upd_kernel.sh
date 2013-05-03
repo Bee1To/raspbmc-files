@@ -21,20 +21,31 @@ else
 		then
 		  exit 1
                 fi
-                logger -t update-checker "Downloading kernel kernel modules and libraries"
+                logger -t update-checker "Downloading kernel modules and libraries"
 		dlprogress "$dlbase/bin/kernel/kernel-rootfs-$kernelstub" "Downloading kernel modules" "1"
 		if [ "$?" -ne 0 ]
                 then
                   exit 1
                 fi
+		logger -t update-checker "Downloading kernel headers"
+		dlprogress "$dlbase/bin/kernel/linux-headers-latest.deb.gz" "Downloading kernel headers" "1"
+		if ["$?" -ne 0 ]
+		then
+		 exit 1
+		fi
 		rm -rf /lib/modules/* > /dev/null 2>&1
 		rm -rf /usr/src/* > /dev/null 2>&1
 		verifiedextraction "kernel-vfat-$kernelstub" "/boot" "Extracting kernel binaries"
 		verifiedextraction "kernel-rootfs-$kernelstub" "/" "Extracting kernel modules"
+		logger -t update-checker "Installing kernel headers"
+		mv linux-headers-latest.deb.gz linux-headers-latest.deb > /dev/null 2>&1
+		dpkg -i linux-headers-latest.deb > /dev/null 2>&1
 		rm kernel-rootfs-$kernelstub > /dev/null 2>&1
 		rm kernel-vfat-$kernelstub > /dev/null 2>&1
+		rm linux-headers-latest.deb >/dev/null 2>&1
 		rm $(echo kernel-rootfs-${kernelstub} | sed -e 's/.\{6\}$//' -e 's/$/md5/') > /dev/null 2>&1
 		rm $(echo kernel-vfat-${kernelstub} | sed -e 's/.\{6\}$//' -e 's/$/md5/') > /dev/null 2>&1
+		rm linux-headers-latest.md5 > /dev/null 2>&1
 		if [ -f /scripts/upd_sys/.USB ]
 		then
                 for line in `cat /proc/cmdline`; do

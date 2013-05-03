@@ -15,16 +15,11 @@ then
 fi
 if [ "$ACTION" == "enable" ]
 then
-grep -E 'disable|}' -v /etc/xinetd.d/$SVC > /etc/xinetd.d/$SVC.new
-mv /etc/xinetd.d/$SVC.new /etc/xinetd.d/$SVC
-echo "disable = no
-}" >> /etc/xinetd.d/$SVC
+  grep 'disable' -v /etc/xinetd.d/$SVC | sed 's/{/{\n\tdisable = no/' > /etc/xinetd.d/$SVC.new
+  mv /etc/xinetd.d/$SVC.new /etc/xinetd.d/$SVC
 fi
-if [ "$ACTION" == "disable" ]
+if [ $ACTION == "disable" ]
 then
-grep -E 'disable|}' -v /etc/xinetd.d/$SVC > /etc/xinetd.d/$SVC.new
-mv /etc/xinetd.d/$SVC.new /etc/xinetd.d/$SVC
-echo "disable = yes
-}" >> /etc/xinetd.d/$SVC
+  grep 'disable' -v /etc/xinetd.d/$SVC | sed 's/{/{\n\tdisable = yes/' > /etc/xinetd.d/$SVC.new
+  mv /etc/xinetd.d/$SVC.new /etc/xinetd.d/$SVC
 fi
-

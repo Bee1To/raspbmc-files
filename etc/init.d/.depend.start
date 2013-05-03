@@ -1,5 +1,5 @@
-TARGETS = killprocs single sudo rsync rmnologin rc.local
+TARGETS = killprocs single sudo rsync rc.local rmnologin
 INTERACTIVE =
 single: killprocs
-rmnologin: sudo rsync
 rc.local: sudo rsync
+rmnologin: sudo rsync

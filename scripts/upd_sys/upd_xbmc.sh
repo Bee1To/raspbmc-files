@@ -1,5 +1,5 @@
 #!/bin/bash
-latestxbmc="xbmc-rbp-20130222.tar.gz"
+latestxbmc="xbmc-rbp-20130423.tar.gz"
 rm xbmcver > /dev/null 2>&1
 wget -q $srcbase/update-system/xbmc/xbmcver
 if [ "$?" -ne 0 ]
